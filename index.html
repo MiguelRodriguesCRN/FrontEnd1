@@ -17,34 +17,49 @@
     </nav>
 
 
-    <form action="index2.html" autocomplete="on" method="post">
-        Digite seu nome:
-        <input type="text" name="nome" id="nome" placeholder="Primeiro Nome" required>
-        <br>
-        Digite seu Sobrenome:
-        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
-        <br>
-        Data de Nascimento
-        <input type="date" name="nasc" id="nasc" placeholder="Data De Nascimento" required>
-        <br>
+    <form action="index2.html" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Cadastro Inicial</legend>
+            Digite seu Primeiro Nome:
+            <input type="text" name="nome" id="nome" placeholder="Primeiro Nome" required>
+            <br>
+            Digite seu Sobrenome:
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <br>
+            Data de Nascimento
+            <input type="date" name="nasc" id="nasc" placeholder="Data De Nascimento" required>
+            <br>
+        </fieldset>
         <br><br>
-        Radio Button: <br>
-        <input type="radio" name="vidiogame" value="ATARI"/> ATARI <br>
-        <input type="radio" name="videogame" Value="Super Nitendo"/> Super Nitendo <br>
-        <input type="radio" name="videogame" value="PlayStation"/> PlayStation <br>
-        <br><br>
-
-        Radio Button 2: <br>
-        <input type="radio" name="consoles" /> PlayStation 2 <br>
-        <input type="radio" name="consoles" /> PlayStation 3<br>
-        <input type="radio" name="consoles" /> PlayStation 4<br>
+        <label for="vidiogame">Consoles Favoritos:</label><br>
+        <input type="radio" name="vidiogame" value="ATARI" /> ATARI <br>
+        <input type="radio" name="videogame" Value="Super Nitendo" /> Super Nitendo <br>
+        <input type="radio" name="videogame" value="PlayStation" /> PlayStation <br>
         <br><br>
 
+        <label for="plays">PlayStation Favorito Favoritos:</label><br>
+        <input type="radio" name="plays" /> PlayStation 2 <br>
+        <input type="radio" name="plays" /> PlayStation 3<br>
+        <input type="radio" name="plays" /> PlayStation 4<br>
+        <br><br>
 
-        CheckBox: <br>
-        <input type="checkbox" name="vidiogame" /> ATARI <br>
-        <input type="checkbox" name="videogame" checked /> Super Nitendo <br>
-        <input type="checkbox" name="videogame" /> PlayStation 5<br>
+
+        <label for="fut">Jogo de Fut Favorito: <label><br>
+        <input type="checkbox" name="fut" /> ATARI <br>
+        <input type="checkbox" name="fut" checked /> Super Nitendo <br>
+        <input type="checkbox" name="fut" /> PlayStation 5<br>
+        <br><br>
+
+        <label for="tecnologias" style="font-size: 19px;"><b>Tecnologias Diferentes</b></label>
+        <select id="tecnologias">
+            <option value="HTML5">HTML5</option>
+            <option value="CSS">CSS3</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="C#" selected>C#</option>
+            <option value="Git e GITHUB">Git e GITHUB</option>
+        </select>
+
+
 
         <br><br><br><br>
         <input type="submit" value="Enviar!">
